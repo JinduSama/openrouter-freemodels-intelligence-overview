@@ -27,5 +27,7 @@
   "openai/gpt-oss-120b:free": "gpt-oss-120B (high)",
   "openai/gpt-oss-20b:free": "gpt-oss-20B (high)",
   "google/gemma-3n-e2b-it:free": "Gemma 3n E2B",
-  "google/gemma-3n-e4b-it:free": "Gemma 3n E4B"
+  "google/gemma-3n-e4b-it:free": "Gemma 3n E4B",
+  "moonshotai/kimi-k2:free": "Kimi K2 0905",
+  "mistralai/mistral-small-3.1-24b-instruct:free": "Mistral Small 3.2"
 }

@@ -219,7 +219,15 @@ def generate_report(matched_results):
     priority_metrics = [
         "ArtificialAnalysisIntelligence Index",
         "MedianTokens/s",
-        "LatencyFirst Answer Chunk (s)"
+        "LatencyFirst Answer Chunk (s)",
+        "InputPriceUSD/1M Tokens",
+        "OutputPriceUSD/1M Tokens",
+        "MMLU-Pro(Reasoning &Knowledge)",
+        "LiveCodeBench(Coding)",
+        "GPQA Diamond(ScientificReasoning)",
+        "Humanity's LastExam(Reasoning & Knowledge)",
+        "Terminal-BenchHard (AgenticCoding & Terminal Use)",
+        "\ud835\udf0f\u00b2-BenchTelecom(Agentic Tool Use)"
     ]
     
     sorted_metrics = [m for m in priority_metrics if m in metric_cols]
@@ -238,7 +246,15 @@ def generate_report(matched_results):
         "match_status": "Match",
         "ArtificialAnalysisIntelligence Index": "Intelligence",
         "MedianTokens/s": "TPS",
-        "LatencyFirst Answer Chunk (s)": "TTFT (s)"
+        "LatencyFirst Answer Chunk (s)": "TTFT (s)",
+        "InputPriceUSD/1M Tokens": "Input Price ($/1M)",
+        "OutputPriceUSD/1M Tokens": "Output Price ($/1M)",
+        "MMLU-Pro(Reasoning &Knowledge)": "MMLU-Pro",
+        "LiveCodeBench(Coding)": "LiveCodeBench",
+        "GPQA Diamond(ScientificReasoning)": "GPQA Diamond",
+        "Humanity's LastExam(Reasoning & Knowledge)": "LastExam",
+        "Terminal-BenchHard (AgenticCoding & Terminal Use)": "Terminal-BenchHard",
+        "\ud835\udf0f\u00b2-BenchTelecom(Agentic Tool Use)": "Tau-BenchTelecom"
     }
     report_df.rename(columns=rename_map, inplace=True)
     
