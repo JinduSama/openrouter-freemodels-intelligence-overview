@@ -10,16 +10,16 @@ from thefuzz import fuzz, process
 # Constants
 OPENROUTER_MODELS_URL = "https://openrouter.ai/api/v1/models"
 ARTIFICIAL_ANALYSIS_URL = "https://artificialanalysis.ai/leaderboards/models"
-CACHE_DIR = Path("cache")
-ALIASES_FILE = Path("model_aliases.json")
-REPORT_FILE = Path("free_models_report.md")
-HTML_REPORT_FILE = Path("free_models_report.html")
+CACHE_DIR = Path("data/cache")
+ALIASES_FILE = Path("data/model_aliases.json")
+REPORT_FILE = Path("output/free_models_report.md")
+HTML_REPORT_FILE = Path("output/free_models_report.html")
 
-def fetch_openrouter_free_models():
+def fetch_openrouter_free_models(force_fetch=False):
     """Fetch models from OpenRouter and filter for free ones."""
     cache_file = CACHE_DIR / "openrouter_models.json"
     
-    if cache_file.exists():
+    if cache_file.exists() and not force_fetch:
         print("Loading OpenRouter models from cache...")
         with open(cache_file, "r") as f:
             data = json.load(f)
@@ -28,7 +28,7 @@ def fetch_openrouter_free_models():
         response = httpx.get(OPENROUTER_MODELS_URL)
         response.raise_for_status()
         data = response.json()
-        CACHE_DIR.mkdir(exist_ok=True)
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
         with open(cache_file, "w") as f:
             json.dump(data, f, indent=2)
     
@@ -48,16 +48,17 @@ def fetch_openrouter_free_models():
     print(f"Found {len(free_models)} free models on OpenRouter.")
     return free_models
 
-def scrape_artificial_analysis():
+def scrape_artificial_analysis(force_fetch=False):
     """Scrape Artificial Analysis leaderboard using Playwright."""
     cache_file = CACHE_DIR / "artificial_analysis_leaderboard.json"
     
-    if cache_file.exists():
+    if cache_file.exists() and not force_fetch:
         print("Loading Artificial Analysis data from cache...")
         with open(cache_file, "r") as f:
             return json.load(f)
     
     print("Scraping Artificial Analysis leaderboard...")
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
@@ -258,6 +259,12 @@ def generate_report(matched_results):
     }
     report_df.rename(columns=rename_map, inplace=True)
     
+    # Sort by Intelligence (highest first)
+    if "Intelligence" in report_df.columns:
+        # Convert to numeric, handling non-numeric values as NaN
+        report_df["Intelligence"] = pd.to_numeric(report_df["Intelligence"], errors="coerce")
+        report_df.sort_values(by="Intelligence", ascending=False, inplace=True)
+    
     # 1. Generate Markdown Report
     markdown_table = report_df.to_markdown(index=False)
     with open(REPORT_FILE, "w", encoding="utf-8") as f:
@@ -307,8 +314,13 @@ def generate_report(matched_results):
     print(f"Reports generated: {REPORT_FILE} and {HTML_REPORT_FILE}")
 
 def main():
-    free_models = fetch_openrouter_free_models()
-    aa_data = scrape_artificial_analysis()
+    import argparse
+    parser = argparse.ArgumentParser(description="Enrich free models with performance metrics.")
+    parser.add_argument("--force", action="store_true", help="Force fetch new data instead of using cache.")
+    args = parser.parse_args()
+
+    free_models = fetch_openrouter_free_models(force_fetch=args.force)
+    aa_data = scrape_artificial_analysis(force_fetch=args.force)
     matched_results = match_models(free_models, aa_data)
     generate_report(matched_results)
 
