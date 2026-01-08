@@ -15,7 +15,7 @@
     </head>
     <body>
         <h1>Free Models Performance Report</h1>
-        <p>Generated on: 2026-01-04 08:32:00</p>
+        <p>Generated on: 2026-01-08 17:28:42</p>
         <table border="1" class="dataframe display" id="reportTable">
   <thead>
     <tr style="text-align: right;">
@@ -28,15 +28,17 @@
       <th>TTFT (s)</th>
       <th>Input Price ($/1M)</th>
       <th>Output Price ($/1M)</th>
-      <th>MMLU-Pro</th>
       <th>LiveCodeBench</th>
       <th>GPQA Diamond</th>
       <th>LastExam</th>
       <th>Terminal-BenchHard</th>
       <th>License</th>
       <th>ArtificialAnalysisOmniscience Index</th>
+      <th>GDPval-AA((ELO-500)/2000)</th>
       <th>𝜏²-BenchTelecom(Agentic Tool Use)</th>
       <th>AA-LCR(LongContext Reasoning)</th>
+      <th>AA-OmniscienceAccuracy(Knowledge)</th>
+      <th>AA-OmniscienceNon-Hallucination Rate(1 - Hallucination Rate)</th>
       <th>SciCode(Coding)</th>
       <th>IFBench(InstructionFollowing)</th>
       <th>AIME 2025(CompetitionMath)</th>
@@ -63,37 +65,39 @@
       <td>Xiaomi: MiMo-V2-Flash (free)</td>
       <td>262144</td>
       <td>alias</td>
-      <td>66.0</td>
-      <td>151</td>
-      <td>1.44</td>
+      <td>39.0</td>
+      <td>132</td>
+      <td>1.46</td>
       <td>$0.10</td>
       <td>$0.30</td>
-      <td>84%</td>
       <td>87%</td>
       <td>85%</td>
       <td>21%</td>
       <td>26%</td>
       <td>Open</td>
       <td>−42</td>
+      <td>31%</td>
       <td>95%</td>
       <td>63%</td>
+      <td>26%</td>
+      <td>7%</td>
       <td>39%</td>
       <td>64%</td>
       <td>96%</td>
-      <td>0%</td>
+      <td>4%</td>
       <td>--</td>
       <td>$0.15</td>
-      <td>105</td>
-      <td>129</td>
-      <td>159</td>
-      <td>170</td>
-      <td>14.71</td>
-      <td>1.05</td>
-      <td>1.24</td>
-      <td>2.52</td>
-      <td>10.05</td>
-      <td>18.03</td>
-      <td>13.27</td>
+      <td>100</td>
+      <td>113</td>
+      <td>142</td>
+      <td>149</td>
+      <td>16.63</td>
+      <td>1.04</td>
+      <td>1.35</td>
+      <td>1.64</td>
+      <td>3.29</td>
+      <td>20.43</td>
+      <td>15.18</td>
       <td>ModelProviders</td>
     </tr>
     <tr>
@@ -101,75 +105,39 @@
       <td>Kwaipilot: KAT-Coder-Pro V1 (free)</td>
       <td>256000</td>
       <td>alias</td>
-      <td>64.0</td>
-      <td>62</td>
-      <td>1.03</td>
+      <td>36.0</td>
+      <td>64</td>
+      <td>1.01</td>
       <td>$0.00</td>
       <td>$0.00</td>
-      <td>81%</td>
       <td>75%</td>
       <td>76%</td>
       <td>33%</td>
       <td>9%</td>
       <td>Proprietary</td>
       <td>−36</td>
+      <td>18%</td>
       <td>89%</td>
       <td>74%</td>
+      <td>18%</td>
+      <td>34%</td>
       <td>37%</td>
       <td>68%</td>
       <td>95%</td>
       <td>0%</td>
       <td>--</td>
       <td>$0.00</td>
-      <td>33</td>
-      <td>55</td>
-      <td>66</td>
-      <td>72</td>
-      <td>1.03</td>
-      <td>0.92</td>
-      <td>0.98</td>
-      <td>1.14</td>
-      <td>1.92</td>
-      <td>9.09</td>
+      <td>42</td>
+      <td>59</td>
+      <td>68</td>
+      <td>70</td>
+      <td>1.01</td>
+      <td>0.91</td>
+      <td>0.94</td>
+      <td>1.08</td>
+      <td>1.74</td>
+      <td>8.84</td>
       <td>0.00</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>openai/gpt-oss-120b:free</td>
-      <td>OpenAI: gpt-oss-120b (free)</td>
-      <td>131072</td>
-      <td>alias</td>
-      <td>61.0</td>
-      <td>363</td>
-      <td>0.42</td>
-      <td>$0.15</td>
-      <td>$0.60</td>
-      <td>81%</td>
-      <td>88%</td>
-      <td>78%</td>
-      <td>19%</td>
-      <td>22%</td>
-      <td>Open</td>
-      <td>−52</td>
-      <td>66%</td>
-      <td>51%</td>
-      <td>39%</td>
-      <td>69%</td>
-      <td>93%</td>
-      <td>1%</td>
-      <td>--</td>
-      <td>$0.26</td>
-      <td>92</td>
-      <td>243</td>
-      <td>614</td>
-      <td>922</td>
-      <td>5.93</td>
-      <td>0.15</td>
-      <td>0.26</td>
-      <td>0.71</td>
-      <td>21.40</td>
-      <td>7.30</td>
-      <td>5.50</td>
       <td>ModelProviders</td>
     </tr>
     <tr>
@@ -177,20 +145,22 @@
       <td>Nex AGI: DeepSeek V3.1 Nex N1 (free)</td>
       <td>131072</td>
       <td>alias</td>
-      <td>58.0</td>
+      <td>33.0</td>
       <td>0</td>
       <td>0.00</td>
       <td>$0.40</td>
       <td>$2.00</td>
-      <td>85%</td>
       <td>80%</td>
       <td>79%</td>
       <td>15%</td>
       <td>28%</td>
       <td>Open</td>
       <td>−27</td>
+      <td>26%</td>
       <td>37%</td>
       <td>65%</td>
+      <td>27%</td>
+      <td>26%</td>
       <td>41%</td>
       <td>57%</td>
       <td>90%</td>
@@ -211,41 +181,83 @@
       <td>ModelProviders</td>
     </tr>
     <tr>
-      <td>nvidia/nemotron-3-nano-30b-a3b:free</td>
-      <td>NVIDIA: Nemotron 3 Nano 30B A3B (free)</td>
-      <td>256000</td>
+      <td>openai/gpt-oss-120b:free</td>
+      <td>OpenAI: gpt-oss-120b (free)</td>
+      <td>131072</td>
       <td>alias</td>
-      <td>52.0</td>
-      <td>351</td>
-      <td>0.20</td>
-      <td>$0.06</td>
-      <td>$0.24</td>
-      <td>79%</td>
-      <td>74%</td>
-      <td>76%</td>
-      <td>10%</td>
-      <td>13%</td>
+      <td>33.0</td>
+      <td>349</td>
+      <td>0.44</td>
+      <td>$0.15</td>
+      <td>$0.60</td>
+      <td>88%</td>
+      <td>78%</td>
+      <td>19%</td>
+      <td>22%</td>
       <td>Open</td>
       <td>−52</td>
-      <td>41%</td>
-      <td>34%</td>
-      <td>30%</td>
-      <td>71%</td>
-      <td>91%</td>
+      <td>23%</td>
+      <td>66%</td>
+      <td>51%</td>
+      <td>20%</td>
+      <td>10%</td>
+      <td>39%</td>
+      <td>69%</td>
+      <td>93%</td>
+      <td>1%</td>
       <td>--</td>
+      <td>$0.26</td>
+      <td>82</td>
+      <td>240</td>
+      <td>610</td>
+      <td>920</td>
+      <td>6.16</td>
+      <td>0.16</td>
+      <td>0.25</td>
+      <td>0.64</td>
+      <td>4.99</td>
+      <td>7.59</td>
+      <td>5.72</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>moonshotai/kimi-k2:free</td>
+      <td>MoonshotAI: Kimi K2 0711 (free)</td>
+      <td>32768</td>
+      <td>alias</td>
+      <td>28.0</td>
+      <td>61</td>
+      <td>0.53</td>
+      <td>$0.99</td>
+      <td>$2.50</td>
+      <td>61%</td>
+      <td>77%</td>
+      <td>6%</td>
+      <td>23%</td>
+      <td>Open</td>
+      <td>−28</td>
+      <td>2%</td>
+      <td>73%</td>
+      <td>52%</td>
+      <td>24%</td>
+      <td>31%</td>
+      <td>31%</td>
+      <td>42%</td>
+      <td>57%</td>
+      <td>0%</td>
       <td>--</td>
-      <td>$0.10</td>
-      <td>95</td>
-      <td>250</td>
-      <td>382</td>
-      <td>393</td>
-      <td>5.89</td>
-      <td>0.17</td>
-      <td>0.18</td>
-      <td>0.23</td>
-      <td>0.24</td>
-      <td>7.31</td>
-      <td>5.69</td>
+      <td>$1.20</td>
+      <td>13</td>
+      <td>32</td>
+      <td>182</td>
+      <td>299</td>
+      <td>0.53</td>
+      <td>0.25</td>
+      <td>0.39</td>
+      <td>0.77</td>
+      <td>2.75</td>
+      <td>8.76</td>
+      <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
     <tr>
@@ -253,20 +265,22 @@
       <td>TNG: R1T Chimera (free)</td>
       <td>163840</td>
       <td>alias</td>
-      <td>52.0</td>
+      <td>27.0</td>
       <td>0</td>
       <td>0.00</td>
       <td>$1.35</td>
       <td>$3.00</td>
-      <td>85%</td>
       <td>77%</td>
       <td>81%</td>
       <td>15%</td>
       <td>15%</td>
       <td>Open</td>
       <td>−30</td>
+      <td>14%</td>
       <td>37%</td>
       <td>55%</td>
+      <td>29%</td>
+      <td>17%</td>
       <td>40%</td>
       <td>40%</td>
       <td>76%</td>
@@ -287,62 +301,26 @@
       <td>ModelProviders</td>
     </tr>
     <tr>
-      <td>openai/gpt-oss-20b:free</td>
-      <td>OpenAI: gpt-oss-20b (free)</td>
-      <td>131072</td>
-      <td>alias</td>
-      <td>52.0</td>
-      <td>309</td>
-      <td>0.51</td>
-      <td>$0.07</td>
-      <td>$0.20</td>
-      <td>75%</td>
-      <td>78%</td>
-      <td>69%</td>
-      <td>10%</td>
-      <td>10%</td>
-      <td>Open</td>
-      <td>−65</td>
-      <td>60%</td>
-      <td>31%</td>
-      <td>34%</td>
-      <td>65%</td>
-      <td>89%</td>
-      <td>1%</td>
-      <td>--</td>
-      <td>$0.10</td>
-      <td>125</td>
-      <td>187</td>
-      <td>454</td>
-      <td>1,020</td>
-      <td>6.98</td>
-      <td>0.15</td>
-      <td>0.20</td>
-      <td>1.09</td>
-      <td>62.74</td>
-      <td>8.60</td>
-      <td>6.47</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
       <td>tngtech/deepseek-r1t-chimera:free</td>
       <td>TNG: DeepSeek R1T Chimera (free)</td>
       <td>163840</td>
       <td>alias</td>
-      <td>52.0</td>
+      <td>27.0</td>
       <td>0</td>
       <td>0.00</td>
       <td>$1.35</td>
       <td>$3.00</td>
-      <td>85%</td>
       <td>77%</td>
       <td>81%</td>
       <td>15%</td>
       <td>15%</td>
       <td>Open</td>
       <td>−30</td>
+      <td>14%</td>
       <td>37%</td>
       <td>55%</td>
+      <td>29%</td>
+      <td>17%</td>
       <td>40%</td>
       <td>40%</td>
       <td>76%</td>
@@ -367,20 +345,22 @@
       <td>DeepSeek: R1 0528 (free)</td>
       <td>163840</td>
       <td>alias</td>
-      <td>52.0</td>
+      <td>27.0</td>
       <td>0</td>
       <td>0.00</td>
       <td>$1.35</td>
       <td>$3.00</td>
-      <td>85%</td>
       <td>77%</td>
       <td>81%</td>
       <td>15%</td>
       <td>15%</td>
       <td>Open</td>
       <td>−30</td>
+      <td>14%</td>
       <td>37%</td>
       <td>55%</td>
+      <td>29%</td>
+      <td>17%</td>
       <td>40%</td>
       <td>40%</td>
       <td>76%</td>
@@ -405,20 +385,22 @@
       <td>TNG: DeepSeek R1T2 Chimera (free)</td>
       <td>163840</td>
       <td>alias</td>
-      <td>52.0</td>
+      <td>27.0</td>
       <td>0</td>
       <td>0.00</td>
       <td>$1.35</td>
       <td>$3.00</td>
-      <td>85%</td>
       <td>77%</td>
       <td>81%</td>
       <td>15%</td>
       <td>15%</td>
       <td>Open</td>
       <td>−30</td>
+      <td>14%</td>
       <td>37%</td>
       <td>55%</td>
+      <td>29%</td>
+      <td>17%</td>
       <td>40%</td>
       <td>40%</td>
       <td>76%</td>
@@ -439,117 +421,43 @@
       <td>ModelProviders</td>
     </tr>
     <tr>
-      <td>moonshotai/kimi-k2:free</td>
-      <td>MoonshotAI: Kimi K2 0711 (free)</td>
-      <td>32768</td>
+      <td>nvidia/nemotron-3-nano-30b-a3b:free</td>
+      <td>NVIDIA: Nemotron 3 Nano 30B A3B (free)</td>
+      <td>256000</td>
       <td>alias</td>
-      <td>50.0</td>
-      <td>95</td>
-      <td>0.53</td>
-      <td>$0.99</td>
-      <td>$2.50</td>
-      <td>82%</td>
-      <td>61%</td>
-      <td>77%</td>
-      <td>6%</td>
-      <td>23%</td>
-      <td>Open</td>
-      <td>−28</td>
-      <td>73%</td>
-      <td>52%</td>
-      <td>31%</td>
-      <td>42%</td>
-      <td>57%</td>
-      <td>0%</td>
-      <td>--</td>
-      <td>$1.20</td>
-      <td>13</td>
-      <td>41</td>
-      <td>205</td>
-      <td>300</td>
-      <td>0.53</td>
-      <td>0.25</td>
-      <td>0.39</td>
-      <td>0.73</td>
-      <td>1.93</td>
-      <td>5.82</td>
-      <td>0.00</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>z-ai/glm-4.5-air:free</td>
-      <td>Z.AI: GLM 4.5 Air (free)</td>
-      <td>131072</td>
-      <td>alias</td>
-      <td>49.0</td>
-      <td>107</td>
-      <td>0.61</td>
-      <td>$0.20</td>
-      <td>$1.10</td>
-      <td>82%</td>
-      <td>68%</td>
-      <td>73%</td>
-      <td>7%</td>
-      <td>19%</td>
-      <td>Open</td>
-      <td>−63</td>
-      <td>47%</td>
-      <td>44%</td>
-      <td>31%</td>
-      <td>38%</td>
-      <td>81%</td>
-      <td>0%</td>
-      <td>--</td>
-      <td>$0.42</td>
-      <td>77</td>
-      <td>89</td>
-      <td>205</td>
-      <td>245</td>
-      <td>19.35</td>
-      <td>0.14</td>
-      <td>0.21</td>
-      <td>1.26</td>
-      <td>2.13</td>
-      <td>24.03</td>
-      <td>18.74</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>qwen/qwen3-4b:free</td>
-      <td>Qwen: Qwen3 4B (free)</td>
-      <td>40960</td>
-      <td>alias</td>
-      <td>43.0</td>
-      <td>0</td>
-      <td>0.00</td>
-      <td>$0.00</td>
-      <td>$0.00</td>
+      <td>25.0</td>
+      <td>221</td>
+      <td>0.54</td>
+      <td>$0.06</td>
+      <td>$0.24</td>
       <td>74%</td>
-      <td>64%</td>
-      <td>67%</td>
-      <td>6%</td>
-      <td>1%</td>
+      <td>76%</td>
+      <td>10%</td>
+      <td>13%</td>
       <td>Open</td>
-      <td>−55</td>
-      <td>25%</td>
-      <td>38%</td>
-      <td>26%</td>
-      <td>50%</td>
-      <td>83%</td>
+      <td>−52</td>
+      <td>11%</td>
+      <td>41%</td>
+      <td>34%</td>
+      <td>17%</td>
+      <td>17%</td>
+      <td>30%</td>
+      <td>71%</td>
+      <td>91%</td>
+      <td>1%</td>
       <td>--</td>
-      <td>--</td>
-      <td>$0.00</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>$0.10</td>
+      <td>123</td>
+      <td>156</td>
+      <td>275</td>
+      <td>369</td>
+      <td>9.61</td>
+      <td>0.20</td>
+      <td>0.49</td>
+      <td>0.56</td>
+      <td>0.89</td>
+      <td>11.87</td>
+      <td>9.07</td>
       <td>ModelProviders</td>
     </tr>
     <tr>
@@ -557,189 +465,119 @@
       <td>Qwen: Qwen3 Coder 480B A35B (free)</td>
       <td>262000</td>
       <td>alias</td>
-      <td>42.0</td>
-      <td>55</td>
-      <td>1.47</td>
+      <td>25.0</td>
+      <td>45</td>
+      <td>1.60</td>
       <td>$1.50</td>
       <td>$7.50</td>
-      <td>79%</td>
       <td>59%</td>
       <td>62%</td>
       <td>4%</td>
       <td>18%</td>
       <td>Open</td>
       <td>−24</td>
+      <td>7%</td>
       <td>44%</td>
       <td>42%</td>
+      <td>14%</td>
+      <td>55%</td>
       <td>36%</td>
       <td>41%</td>
       <td>39%</td>
       <td>0%</td>
       <td>--</td>
       <td>$3.00</td>
-      <td>46</td>
-      <td>51</td>
+      <td>32</td>
+      <td>43</td>
+      <td>57</td>
       <td>63</td>
-      <td>67</td>
-      <td>1.47</td>
-      <td>1.36</td>
-      <td>1.42</td>
-      <td>1.56</td>
-      <td>1.90</td>
-      <td>10.51</td>
+      <td>1.60</td>
+      <td>1.37</td>
+      <td>1.50</td>
+      <td>1.72</td>
+      <td>2.43</td>
+      <td>12.63</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
     <tr>
-      <td>nvidia/nemotron-nano-12b-v2-vl:free</td>
-      <td>NVIDIA: Nemotron Nano 12B 2 VL (free)</td>
-      <td>128000</td>
+      <td>openai/gpt-oss-20b:free</td>
+      <td>OpenAI: gpt-oss-20b (free)</td>
+      <td>131072</td>
       <td>alias</td>
-      <td>41.0</td>
-      <td>127</td>
-      <td>0.21</td>
-      <td>$0.20</td>
-      <td>$0.60</td>
-      <td>76%</td>
-      <td>69%</td>
-      <td>57%</td>
-      <td>5%</td>
-      <td>4%</td>
-      <td>Open</td>
-      <td>−66</td>
-      <td>21%</td>
-      <td>40%</td>
-      <td>26%</td>
-      <td>32%</td>
-      <td>75%</td>
-      <td>0%</td>
-      <td>53%</td>
-      <td>$0.30</td>
-      <td>120</td>
-      <td>124</td>
-      <td>132</td>
-      <td>132</td>
-      <td>15.97</td>
-      <td>0.16</td>
-      <td>0.18</td>
-      <td>0.22</td>
-      <td>0.24</td>
-      <td>19.91</td>
-      <td>15.76</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>allenai/olmo-3-32b-think:free</td>
-      <td>AllenAI: Olmo 3 32B Think (free)</td>
-      <td>65536</td>
-      <td>alias</td>
-      <td>38.0</td>
-      <td>37</td>
-      <td>0.50</td>
-      <td>$0.00</td>
-      <td>$0.00</td>
-      <td>76%</td>
-      <td>70%</td>
-      <td>59%</td>
-      <td>6%</td>
-      <td>0%</td>
-      <td>Open</td>
-      <td>−39</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>29%</td>
-      <td>66%</td>
-      <td>77%</td>
-      <td>--</td>
-      <td>--</td>
-      <td>$0.00</td>
-      <td>29</td>
-      <td>35</td>
-      <td>44</td>
-      <td>51</td>
-      <td>54.27</td>
-      <td>0.43</td>
-      <td>0.47</td>
-      <td>0.60</td>
-      <td>1.80</td>
-      <td>67.72</td>
-      <td>53.77</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>allenai/olmo-3.1-32b-think:free</td>
-      <td>AllenAI: Olmo 3.1 32B Think (free)</td>
-      <td>65536</td>
-      <td>alias</td>
-      <td>38.0</td>
-      <td>37</td>
-      <td>0.50</td>
-      <td>$0.00</td>
-      <td>$0.00</td>
-      <td>76%</td>
-      <td>70%</td>
-      <td>59%</td>
-      <td>6%</td>
-      <td>0%</td>
-      <td>Open</td>
-      <td>−39</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>29%</td>
-      <td>66%</td>
-      <td>77%</td>
-      <td>--</td>
-      <td>--</td>
-      <td>$0.00</td>
-      <td>29</td>
-      <td>35</td>
-      <td>44</td>
-      <td>51</td>
-      <td>54.27</td>
-      <td>0.43</td>
-      <td>0.47</td>
-      <td>0.60</td>
-      <td>1.80</td>
-      <td>67.72</td>
-      <td>53.77</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>nvidia/nemotron-nano-9b-v2:free</td>
-      <td>NVIDIA: Nemotron Nano 9B V2 (free)</td>
-      <td>128000</td>
-      <td>alias</td>
-      <td>37.0</td>
-      <td>55</td>
-      <td>0.25</td>
-      <td>$0.04</td>
-      <td>$0.16</td>
-      <td>74%</td>
-      <td>72%</td>
-      <td>57%</td>
-      <td>5%</td>
-      <td>1%</td>
-      <td>Open</td>
-      <td>−43</td>
-      <td>22%</td>
-      <td>21%</td>
-      <td>22%</td>
-      <td>28%</td>
-      <td>70%</td>
-      <td>--</td>
-      <td>--</td>
+      <td>25.0</td>
+      <td>309</td>
+      <td>0.51</td>
       <td>$0.07</td>
-      <td>31</td>
-      <td>35</td>
-      <td>69</td>
-      <td>72</td>
-      <td>36.82</td>
-      <td>0.20</td>
-      <td>0.23</td>
-      <td>0.32</td>
-      <td>0.49</td>
-      <td>45.96</td>
-      <td>36.57</td>
+      <td>$0.20</td>
+      <td>78%</td>
+      <td>69%</td>
+      <td>10%</td>
+      <td>10%</td>
+      <td>Open</td>
+      <td>−65</td>
+      <td>12%</td>
+      <td>60%</td>
+      <td>31%</td>
+      <td>15%</td>
+      <td>7%</td>
+      <td>34%</td>
+      <td>65%</td>
+      <td>89%</td>
+      <td>1%</td>
+      <td>--</td>
+      <td>$0.10</td>
+      <td>113</td>
+      <td>179</td>
+      <td>454</td>
+      <td>1,007</td>
+      <td>6.98</td>
+      <td>0.15</td>
+      <td>0.21</td>
+      <td>1.14</td>
+      <td>71.87</td>
+      <td>8.60</td>
+      <td>6.47</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>z-ai/glm-4.5-air:free</td>
+      <td>Z.AI: GLM 4.5 Air (free)</td>
+      <td>131072</td>
+      <td>alias</td>
+      <td>23.0</td>
+      <td>97</td>
+      <td>0.59</td>
+      <td>$0.20</td>
+      <td>$1.10</td>
+      <td>68%</td>
+      <td>73%</td>
+      <td>7%</td>
+      <td>19%</td>
+      <td>Open</td>
+      <td>−63</td>
+      <td>10%</td>
+      <td>47%</td>
+      <td>44%</td>
+      <td>15%</td>
+      <td>8%</td>
+      <td>31%</td>
+      <td>38%</td>
+      <td>81%</td>
+      <td>0%</td>
+      <td>--</td>
+      <td>$0.42</td>
+      <td>57</td>
+      <td>89</td>
+      <td>166</td>
+      <td>242</td>
+      <td>21.11</td>
+      <td>0.16</td>
+      <td>0.22</td>
+      <td>1.26</td>
+      <td>2.66</td>
+      <td>26.24</td>
+      <td>20.52</td>
       <td>ModelProviders</td>
     </tr>
     <tr>
@@ -747,74 +585,38 @@
       <td>Mistral: Devstral 2 2512 (free)</td>
       <td>262144</td>
       <td>alias</td>
-      <td>36.0</td>
-      <td>56</td>
-      <td>0.43</td>
+      <td>22.0</td>
+      <td>51</td>
+      <td>0.45</td>
       <td>$0.00</td>
       <td>$0.00</td>
-      <td>76%</td>
       <td>45%</td>
       <td>59%</td>
       <td>4%</td>
       <td>18%</td>
       <td>Open</td>
       <td>−48</td>
+      <td>20%</td>
       <td>25%</td>
       <td>30%</td>
+      <td>20%</td>
+      <td>16%</td>
       <td>33%</td>
       <td>38%</td>
       <td>37%</td>
       <td>0%</td>
       <td>--</td>
       <td>$0.00</td>
-      <td>44</td>
-      <td>51</td>
+      <td>37</td>
+      <td>47</td>
+      <td>55</td>
       <td>62</td>
-      <td>67</td>
-      <td>0.43</td>
-      <td>0.39</td>
+      <td>0.45</td>
+      <td>0.40</td>
       <td>0.41</td>
       <td>0.51</td>
-      <td>0.74</td>
-      <td>9.31</td>
-      <td>0.00</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>mistralai/mistral-small-3.1-24b-instruct:free</td>
-      <td>Mistral: Mistral Small 3.1 24B (free)</td>
-      <td>128000</td>
-      <td>alias</td>
-      <td>29.0</td>
-      <td>112</td>
-      <td>0.31</td>
-      <td>$0.10</td>
-      <td>$0.30</td>
-      <td>68%</td>
-      <td>28%</td>
-      <td>51%</td>
-      <td>4%</td>
-      <td>6%</td>
-      <td>Open</td>
-      <td>−51</td>
-      <td>30%</td>
-      <td>17%</td>
-      <td>26%</td>
-      <td>34%</td>
-      <td>27%</td>
-      <td>--</td>
-      <td>48%</td>
-      <td>$0.15</td>
-      <td>71</td>
-      <td>103</td>
-      <td>122</td>
-      <td>151</td>
-      <td>0.31</td>
-      <td>0.26</td>
-      <td>0.28</td>
-      <td>0.48</td>
-      <td>3.08</td>
-      <td>4.76</td>
+      <td>0.70</td>
+      <td>10.19</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
@@ -823,36 +625,158 @@
       <td>Meta: Llama 3.1 405B Instruct (free)</td>
       <td>131072</td>
       <td>alias</td>
-      <td>28.0</td>
-      <td>25</td>
-      <td>0.81</td>
+      <td>17.0</td>
+      <td>24</td>
+      <td>0.86</td>
       <td>$3.75</td>
       <td>$6.75</td>
-      <td>73%</td>
       <td>31%</td>
       <td>52%</td>
       <td>4%</td>
       <td>6%</td>
       <td>Open</td>
       <td>−18</td>
+      <td>0%</td>
       <td>19%</td>
       <td>24%</td>
+      <td>22%</td>
+      <td>49%</td>
       <td>30%</td>
       <td>39%</td>
       <td>3%</td>
-      <td>--</td>
+      <td>0%</td>
       <td>--</td>
       <td>$4.19</td>
-      <td>21</td>
-      <td>24</td>
-      <td>31</td>
-      <td>74</td>
-      <td>0.81</td>
-      <td>0.38</td>
-      <td>0.44</td>
-      <td>1.15</td>
+      <td>18</td>
+      <td>23</td>
+      <td>30</td>
+      <td>71</td>
+      <td>0.86</td>
+      <td>0.39</td>
+      <td>0.45</td>
+      <td>1.25</td>
       <td>1.86</td>
-      <td>20.83</td>
+      <td>21.29</td>
+      <td>0.00</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>nvidia/nemotron-nano-12b-v2-vl:free</td>
+      <td>NVIDIA: Nemotron Nano 12B 2 VL (free)</td>
+      <td>128000</td>
+      <td>alias</td>
+      <td>15.0</td>
+      <td>129</td>
+      <td>0.21</td>
+      <td>$0.20</td>
+      <td>$0.60</td>
+      <td>69%</td>
+      <td>57%</td>
+      <td>5%</td>
+      <td>4%</td>
+      <td>Open</td>
+      <td>−66</td>
+      <td>1%</td>
+      <td>21%</td>
+      <td>40%</td>
+      <td>13%</td>
+      <td>8%</td>
+      <td>26%</td>
+      <td>32%</td>
+      <td>75%</td>
+      <td>0%</td>
+      <td>53%</td>
+      <td>$0.30</td>
+      <td>123</td>
+      <td>126</td>
+      <td>131</td>
+      <td>133</td>
+      <td>15.68</td>
+      <td>0.16</td>
+      <td>0.19</td>
+      <td>0.23</td>
+      <td>0.46</td>
+      <td>19.55</td>
+      <td>15.46</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>nvidia/nemotron-nano-9b-v2:free</td>
+      <td>NVIDIA: Nemotron Nano 9B V2 (free)</td>
+      <td>128000</td>
+      <td>alias</td>
+      <td>15.0</td>
+      <td>116</td>
+      <td>0.24</td>
+      <td>$0.04</td>
+      <td>$0.16</td>
+      <td>72%</td>
+      <td>57%</td>
+      <td>5%</td>
+      <td>1%</td>
+      <td>Open</td>
+      <td>−43</td>
+      <td>6%</td>
+      <td>22%</td>
+      <td>21%</td>
+      <td>11%</td>
+      <td>40%</td>
+      <td>22%</td>
+      <td>28%</td>
+      <td>70%</td>
+      <td>0%</td>
+      <td>--</td>
+      <td>$0.07</td>
+      <td>52</td>
+      <td>75</td>
+      <td>122</td>
+      <td>128</td>
+      <td>17.52</td>
+      <td>0.16</td>
+      <td>0.22</td>
+      <td>0.25</td>
+      <td>0.32</td>
+      <td>21.84</td>
+      <td>17.28</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>mistralai/mistral-small-3.1-24b-instruct:free</td>
+      <td>Mistral: Mistral Small 3.1 24B (free)</td>
+      <td>128000</td>
+      <td>alias</td>
+      <td>15.0</td>
+      <td>93</td>
+      <td>0.31</td>
+      <td>$0.10</td>
+      <td>$0.30</td>
+      <td>28%</td>
+      <td>51%</td>
+      <td>4%</td>
+      <td>6%</td>
+      <td>Open</td>
+      <td>−51</td>
+      <td>0%</td>
+      <td>30%</td>
+      <td>17%</td>
+      <td>14%</td>
+      <td>24%</td>
+      <td>26%</td>
+      <td>34%</td>
+      <td>27%</td>
+      <td>0%</td>
+      <td>48%</td>
+      <td>$0.15</td>
+      <td>53</td>
+      <td>66</td>
+      <td>106</td>
+      <td>128</td>
+      <td>0.31</td>
+      <td>0.26</td>
+      <td>0.29</td>
+      <td>0.49</td>
+      <td>0.91</td>
+      <td>5.71</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
@@ -861,36 +785,38 @@
       <td>Meta: Llama 3.3 70B Instruct (free)</td>
       <td>131072</td>
       <td>alias</td>
-      <td>28.0</td>
-      <td>120</td>
-      <td>0.46</td>
+      <td>15.0</td>
+      <td>100</td>
+      <td>0.49</td>
       <td>$0.58</td>
       <td>$0.71</td>
-      <td>71%</td>
       <td>29%</td>
       <td>50%</td>
       <td>4%</td>
       <td>3%</td>
       <td>Open</td>
       <td>−55</td>
+      <td>4%</td>
       <td>27%</td>
       <td>15%</td>
+      <td>18%</td>
+      <td>11%</td>
       <td>26%</td>
       <td>47%</td>
       <td>8%</td>
-      <td>--</td>
+      <td>0%</td>
       <td>--</td>
       <td>$0.64</td>
       <td>21</td>
-      <td>47</td>
-      <td>152</td>
-      <td>399</td>
-      <td>0.46</td>
-      <td>0.17</td>
-      <td>0.31</td>
-      <td>0.69</td>
-      <td>1.40</td>
-      <td>4.64</td>
+      <td>42</td>
+      <td>146</td>
+      <td>395</td>
+      <td>0.49</td>
+      <td>0.19</td>
+      <td>0.32</td>
+      <td>0.72</td>
+      <td>1.57</td>
+      <td>5.47</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
@@ -899,36 +825,38 @@
       <td>Google: Gemma 3 27B (free)</td>
       <td>131072</td>
       <td>alias</td>
-      <td>22.0</td>
-      <td>46</td>
-      <td>2.39</td>
+      <td>10.0</td>
+      <td>45</td>
+      <td>6.08</td>
       <td>$0.00</td>
       <td>$0.00</td>
-      <td>67%</td>
       <td>14%</td>
       <td>43%</td>
       <td>5%</td>
       <td>4%</td>
       <td>Open</td>
       <td>−68</td>
+      <td>1%</td>
       <td>11%</td>
       <td>6%</td>
+      <td>12%</td>
+      <td>9%</td>
       <td>21%</td>
       <td>32%</td>
       <td>21%</td>
-      <td>--</td>
+      <td>0%</td>
       <td>48%</td>
       <td>$0.00</td>
-      <td>38</td>
+      <td>35</td>
       <td>44</td>
-      <td>49</td>
+      <td>48</td>
       <td>51</td>
-      <td>2.39</td>
-      <td>0.65</td>
-      <td>0.88</td>
-      <td>5.74</td>
-      <td>9.69</td>
-      <td>13.18</td>
+      <td>6.08</td>
+      <td>0.67</td>
+      <td>4.24</td>
+      <td>6.89</td>
+      <td>9.98</td>
+      <td>17.07</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
@@ -937,74 +865,38 @@
       <td>Google: Gemma 3 12B (free)</td>
       <td>32768</td>
       <td>alias</td>
-      <td>20.0</td>
-      <td>46</td>
-      <td>4.43</td>
+      <td>9.0</td>
+      <td>45</td>
+      <td>9.20</td>
       <td>$0.00</td>
       <td>$0.00</td>
-      <td>60%</td>
       <td>14%</td>
       <td>35%</td>
       <td>5%</td>
       <td>1%</td>
       <td>Open</td>
       <td>−77</td>
+      <td>2%</td>
       <td>11%</td>
       <td>7%</td>
+      <td>10%</td>
+      <td>3%</td>
       <td>17%</td>
       <td>37%</td>
       <td>18%</td>
-      <td>--</td>
+      <td>0%</td>
       <td>38%</td>
       <td>$0.00</td>
-      <td>40</td>
+      <td>37</td>
       <td>42</td>
       <td>49</td>
-      <td>54</td>
-      <td>4.43</td>
-      <td>1.42</td>
-      <td>2.84</td>
-      <td>14.43</td>
-      <td>36.42</td>
-      <td>15.39</td>
-      <td>0.00</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>google/gemma-3n-e4b-it:free</td>
-      <td>Google: Gemma 3n 4B (free)</td>
-      <td>8192</td>
-      <td>alias</td>
-      <td>15.0</td>
-      <td>54</td>
-      <td>0.39</td>
-      <td>$0.02</td>
-      <td>$0.04</td>
-      <td>49%</td>
-      <td>15%</td>
-      <td>30%</td>
-      <td>4%</td>
-      <td>2%</td>
-      <td>Open</td>
-      <td>−82</td>
-      <td>5%</td>
-      <td>0%</td>
-      <td>8%</td>
-      <td>28%</td>
-      <td>14%</td>
-      <td>--</td>
-      <td>26%</td>
-      <td>$0.03</td>
-      <td>34</td>
-      <td>46</td>
-      <td>61</td>
-      <td>72</td>
-      <td>0.39</td>
-      <td>0.23</td>
-      <td>0.36</td>
-      <td>0.46</td>
-      <td>0.75</td>
-      <td>9.66</td>
+      <td>50</td>
+      <td>9.20</td>
+      <td>1.74</td>
+      <td>2.88</td>
+      <td>33.73</td>
+      <td>60.55</td>
+      <td>20.24</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
@@ -1013,74 +905,38 @@
       <td>Google: Gemma 3 4B (free)</td>
       <td>32768</td>
       <td>alias</td>
-      <td>15.0</td>
-      <td>44</td>
-      <td>1.01</td>
+      <td>6.0</td>
+      <td>43</td>
+      <td>0.98</td>
       <td>$0.00</td>
       <td>$0.00</td>
-      <td>42%</td>
       <td>11%</td>
       <td>29%</td>
       <td>5%</td>
       <td>1%</td>
       <td>Open</td>
       <td>−84</td>
+      <td>0%</td>
       <td>5%</td>
       <td>6%</td>
       <td>7%</td>
+      <td>2%</td>
+      <td>7%</td>
       <td>28%</td>
       <td>13%</td>
-      <td>--</td>
+      <td>0%</td>
       <td>30%</td>
       <td>$0.00</td>
-      <td>36</td>
-      <td>42</td>
+      <td>32</td>
+      <td>40</td>
       <td>47</td>
-      <td>51</td>
-      <td>1.01</td>
+      <td>52</td>
+      <td>0.98</td>
       <td>0.83</td>
       <td>0.91</td>
-      <td>1.04</td>
-      <td>1.09</td>
-      <td>12.48</td>
-      <td>0.00</td>
-      <td>ModelProviders</td>
-    </tr>
-    <tr>
-      <td>google/gemma-3n-e2b-it:free</td>
-      <td>Google: Gemma 3n 2B (free)</td>
-      <td>8192</td>
-      <td>alias</td>
-      <td>11.0</td>
-      <td>44</td>
-      <td>0.31</td>
-      <td>$0.00</td>
-      <td>$0.00</td>
-      <td>38%</td>
-      <td>10%</td>
-      <td>23%</td>
-      <td>4%</td>
-      <td>1%</td>
-      <td>Open</td>
-      <td>−81</td>
-      <td>0%</td>
-      <td>0%</td>
-      <td>5%</td>
-      <td>22%</td>
-      <td>10%</td>
-      <td>--</td>
-      <td>--</td>
-      <td>$0.00</td>
-      <td>36</td>
-      <td>42</td>
-      <td>48</td>
-      <td>54</td>
-      <td>0.31</td>
-      <td>0.25</td>
-      <td>0.26</td>
-      <td>0.39</td>
-      <td>0.50</td>
-      <td>11.69</td>
+      <td>1.08</td>
+      <td>1.15</td>
+      <td>12.69</td>
       <td>0.00</td>
       <td>ModelProviders</td>
     </tr>
@@ -1091,42 +947,6 @@
       <td>unmatched</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <td>alibaba/tongyi-deepresearch-30b-a3b:free</td>
-      <td>Tongyi DeepResearch 30B A3B (free)</td>
-      <td>131072</td>
-      <td>unmatched</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1197,12 +1017,136 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>google/gemma-3n-e2b-it:free</td>
+      <td>Google: Gemma 3n 2B (free)</td>
+      <td>8192</td>
+      <td>alias</td>
+      <td>NaN</td>
+      <td>48</td>
+      <td>0.29</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>10%</td>
+      <td>23%</td>
+      <td>4%</td>
+      <td>1%</td>
+      <td>Open</td>
+      <td>−81</td>
+      <td>--</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>6%</td>
+      <td>7%</td>
+      <td>5%</td>
+      <td>22%</td>
+      <td>10%</td>
+      <td>0%</td>
+      <td>--</td>
+      <td>$0.00</td>
+      <td>37</td>
+      <td>46</td>
+      <td>52</td>
+      <td>57</td>
+      <td>0.29</td>
+      <td>0.25</td>
+      <td>0.27</td>
+      <td>0.37</td>
+      <td>0.52</td>
+      <td>10.65</td>
+      <td>0.00</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>google/gemma-3n-e4b-it:free</td>
+      <td>Google: Gemma 3n 4B (free)</td>
+      <td>8192</td>
+      <td>alias</td>
+      <td>NaN</td>
+      <td>47</td>
+      <td>0.34</td>
+      <td>$0.02</td>
+      <td>$0.04</td>
+      <td>15%</td>
+      <td>30%</td>
+      <td>4%</td>
+      <td>2%</td>
+      <td>Open</td>
+      <td>−82</td>
+      <td>--</td>
+      <td>5%</td>
+      <td>0%</td>
+      <td>7%</td>
+      <td>3%</td>
+      <td>8%</td>
+      <td>28%</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>26%</td>
+      <td>$0.03</td>
+      <td>40</td>
+      <td>41</td>
+      <td>54</td>
+      <td>62</td>
+      <td>0.34</td>
+      <td>0.26</td>
+      <td>0.32</td>
+      <td>0.39</td>
+      <td>0.49</td>
+      <td>11.06</td>
+      <td>0.00</td>
+      <td>ModelProviders</td>
+    </tr>
+    <tr>
+      <td>qwen/qwen3-4b:free</td>
+      <td>Qwen: Qwen3 4B (free)</td>
+      <td>40960</td>
+      <td>alias</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>64%</td>
+      <td>67%</td>
+      <td>6%</td>
+      <td>1%</td>
+      <td>Open</td>
+      <td>−55</td>
+      <td>--</td>
+      <td>25%</td>
+      <td>38%</td>
+      <td>13%</td>
+      <td>22%</td>
+      <td>26%</td>
+      <td>50%</td>
+      <td>83%</td>
+      <td>0%</td>
+      <td>--</td>
+      <td>$0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>ModelProviders</td>
     </tr>
     <tr>
       <td>google/gemini-2.0-flash-exp:free</td>
       <td>Google: Gemini 2.0 Flash Experimental (free)</td>
       <td>1048576</td>
       <td>unmatched</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1273,12 +1217,16 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <td>qwen/qwen-2.5-vl-7b-instruct:free</td>
       <td>Qwen: Qwen2.5-VL 7B Instruct (free)</td>
       <td>32768</td>
       <td>unmatched</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1349,12 +1297,16 @@
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <td>mistralai/mistral-7b-instruct:free</td>
       <td>Mistral: Mistral 7B Instruct (free)</td>
       <td>32768</td>
       <td>unmatched</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
