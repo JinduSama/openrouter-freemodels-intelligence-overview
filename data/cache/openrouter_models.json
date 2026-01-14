@@ -1,6 +1,169 @@
 {
   "data": [
     {
+      "id": "openai/gpt-5.2-codex",
+      "canonical_slug": "openai/gpt-5.2-codex-20260114",
+      "hugging_face_id": "",
+      "name": "OpenAI: GPT-5.2-Codex",
+      "created": 1768409315,
+      "description": "GPT-5.2-Codex is an upgraded version of GPT-5.1-Codex optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution of complex engineering tasks. The model supports building projects from scratch, feature development, debugging, large-scale refactoring, and code review. Compared to GPT-5.1-Codex, 5.2-Codex is more steerable, adheres closely to developer instructions, and produces cleaner, higher-quality code outputs. Reasoning effort can be adjusted with the `reasoning.effort` parameter. Read the [docs here](https://openrouter.ai/docs/use-cases/reasoning-tokens#reasoning-effort-level)\n\nCodex integrates into developer environments including the CLI, IDE extensions, GitHub, and cloud tasks. It adapts reasoning effort dynamically\u2014providing fast responses for small tasks while sustaining extended multi-hour runs for large projects. The model is trained to perform structured code reviews, catching critical flaws by reasoning over dependencies and validating behavior against tests. It also supports multimodal inputs such as images or screenshots for UI development and integrates tool use for search, dependency installation, and environment setup. Codex is intended specifically for agentic coding applications.",
+      "context_length": 400000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000175",
+        "completion": "0.000014",
+        "web_search": "0.01",
+        "input_cache_read": "0.000000175"
+      },
+      "top_provider": {
+        "context_length": 400000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "top_logprobs"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
+    },
+    {
+      "id": "allenai/molmo-2-8b:free",
+      "canonical_slug": "allenai/molmo-2-8b-20260109",
+      "hugging_face_id": "allenai/Molmo2-8B",
+      "name": "AllenAI: Molmo2 8B (free)",
+      "created": 1767996672,
+      "description": "Molmo2-8B is an open vision-language model developed by the Allen Institute for AI (Ai2) as part of the Molmo2 family, supporting image, video, and multi-image understanding and grounding. It is based on Qwen3-8B and uses SigLIP 2 as its vision backbone, outperforming other open-weight, open-data models on short videos, counting, and captioning, while remaining competitive on long-video tasks.",
+      "context_length": 36864,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0"
+      },
+      "top_provider": {
+        "context_length": 36864,
+        "max_completion_tokens": 36864,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
+    },
+    {
+      "id": "allenai/olmo-3.1-32b-instruct",
+      "canonical_slug": "allenai/olmo-3.1-32b-instruct-20251215",
+      "hugging_face_id": "allenai/Olmo-3.1-32B-Instruct",
+      "name": "AllenAI: Olmo 3.1 32B Instruct",
+      "created": 1767728554,
+      "description": "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this variant emphasizes responsiveness to complex user directions and robust chat interactions while retaining strong capabilities on reasoning and coding benchmarks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Instruct reflects the Olmo initiative\u2019s commitment to openness and transparency.",
+      "context_length": 65536,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.0000006",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0"
+      },
+      "top_provider": {
+        "context_length": 65536,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      }
+    },
+    {
       "id": "bytedance-seed/seed-1.6-flash",
       "canonical_slug": "bytedance-seed/seed-1.6-flash-20250625",
       "hugging_face_id": "",
@@ -126,17 +289,16 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000028",
-        "completion": "0.0000012",
+        "prompt": "0.00000027",
+        "completion": "0.00000112",
         "request": "0",
         "image": "0",
         "web_search": "0",
-        "internal_reasoning": "0",
-        "input_cache_read": "0.00000014"
+        "internal_reasoning": "0"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -307,11 +469,7 @@
       },
       "pricing": {
         "prompt": "0.0000001",
-        "completion": "0.0000003",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000003"
       },
       "top_provider": {
         "context_length": 32768,
@@ -567,10 +725,7 @@
       "pricing": {
         "prompt": "0.00000175",
         "completion": "0.000014",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000175"
       },
       "top_provider": {
@@ -617,10 +772,7 @@
       "pricing": {
         "prompt": "0.000021",
         "completion": "0.000168",
-        "request": "0",
-        "image": "0",
-        "web_search": "0.01",
-        "internal_reasoning": "0"
+        "web_search": "0.01"
       },
       "top_provider": {
         "context_length": 400000,
@@ -668,10 +820,7 @@
       "pricing": {
         "prompt": "0.00000175",
         "completion": "0.000014",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000175"
       },
       "top_provider": {
@@ -717,11 +866,7 @@
       },
       "pricing": {
         "prompt": "0",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 262144,
@@ -913,10 +1058,10 @@
       }
     },
     {
-      "id": "nex-agi/deepseek-v3.1-nex-n1:free",
+      "id": "nex-agi/deepseek-v3.1-nex-n1",
       "canonical_slug": "nex-agi/deepseek-v3.1-nex-n1",
       "hugging_face_id": "nex-agi/DeepSeek-V3.1-Nex-N1",
-      "name": "Nex AGI: DeepSeek V3.1 Nex N1 (free)",
+      "name": "Nex AGI: DeepSeek V3.1 Nex N1",
       "created": 1765204393,
       "description": "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series \u2014 a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. \n\nNex-N1 demonstrates competitive performance across all evaluation scenarios, showing particularly strong results in practical coding and HTML generation tasks.",
       "context_length": 131072,
@@ -932,8 +1077,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0",
+        "prompt": "0.00000027",
+        "completion": "0.000001",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -1075,10 +1220,6 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -1178,11 +1319,7 @@
       },
       "pricing": {
         "prompt": "0.0000002",
-        "completion": "0.0000002",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000002"
       },
       "top_provider": {
         "context_length": 262144,
@@ -1235,11 +1372,7 @@
       },
       "pricing": {
         "prompt": "0.00000015",
-        "completion": "0.00000015",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00000015"
       },
       "top_provider": {
         "context_length": 262144,
@@ -1288,11 +1421,7 @@
       },
       "pricing": {
         "prompt": "0.0000001",
-        "completion": "0.0000001",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000001"
       },
       "top_provider": {
         "context_length": 131072,
@@ -1341,11 +1470,7 @@
       },
       "pricing": {
         "prompt": "0.0000005",
-        "completion": "0.0000015",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000015"
       },
       "top_provider": {
         "context_length": 262144,
@@ -1800,7 +1925,7 @@
       },
       "top_provider": {
         "context_length": 200000,
-        "max_completion_tokens": 32000,
+        "max_completion_tokens": 64000,
         "is_moderated": true
       },
       "per_request_limits": null,
@@ -2235,10 +2360,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -2287,10 +2409,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -2336,10 +2455,6 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -2387,10 +2502,6 @@
       "pricing": {
         "prompt": "0.00000025",
         "completion": "0.000002",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000025"
       },
       "top_provider": {
@@ -2408,60 +2519,6 @@
         "structured_outputs",
         "tool_choice",
         "tools"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      }
-    },
-    {
-      "id": "kwaipilot/kat-coder-pro:free",
-      "canonical_slug": "kwaipilot/kat-coder-pro-v1",
-      "hugging_face_id": "",
-      "name": "Kwaipilot: KAT-Coder-Pro V1 (free)",
-      "created": 1762745912,
-      "description": "KAT-Coder-Pro V1 is KwaiKAT's most advanced agentic coding model in the KAT-Coder series. Designed specifically for agentic coding tasks, it excels in real-world software engineering scenarios, achieving 73.4% solve rate on the SWE-Bench Verified benchmark. \n\nThe model has been optimized for tool-use capability, multi-turn interaction, instruction following, generalization, and comprehensive capabilities through a multi-stage training process, including mid-training, supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and scalable agentic RL.",
-      "context_length": 256000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
-      },
-      "top_provider": {
-        "context_length": 256000,
-        "max_completion_tokens": 128000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
       ],
       "default_parameters": {
         "temperature": null,
@@ -2708,11 +2765,7 @@
       "pricing": {
         "prompt": "0.0000001",
         "completion": "0.0000003",
-        "request": "0",
-        "image": "0",
-        "audio": "0.0001",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "audio": "0.0001"
       },
       "top_provider": {
         "context_length": 32000,
@@ -3030,8 +3083,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000001",
+        "prompt": "0.00000001",
+        "completion": "0.00000002",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -3077,8 +3130,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000001",
+        "prompt": "0.00000001",
+        "completion": "0.00000002",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -3239,10 +3292,7 @@
       "pricing": {
         "prompt": "0.0000025",
         "completion": "0.000002",
-        "request": "0",
-        "image": "0.0000025",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.00000025"
       },
       "top_provider": {
@@ -3463,10 +3513,7 @@
       "pricing": {
         "prompt": "0.00001",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0.00001",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.00000125"
       },
       "top_provider": {
@@ -3523,10 +3570,7 @@
       "pricing": {
         "prompt": "0.00001",
         "completion": "0.00004",
-        "request": "0",
-        "image": "0.00765",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.0000025"
       },
       "top_provider": {
@@ -3583,10 +3627,7 @@
       "pricing": {
         "prompt": "0.000002",
         "completion": "0.000008",
-        "request": "0",
-        "image": "0.00153",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.0000005"
       },
       "top_provider": {
@@ -3912,10 +3953,7 @@
       "pricing": {
         "prompt": "0.000015",
         "completion": "0.00012",
-        "request": "0",
-        "image": "0",
-        "web_search": "0.01",
-        "internal_reasoning": "0"
+        "web_search": "0.01"
       },
       "top_provider": {
         "context_length": 400000,
@@ -4622,10 +4660,6 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -5917,11 +5951,7 @@
       "pricing": {
         "prompt": "0.0000025",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
-        "audio": "0.00004",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "audio": "0.00004"
       },
       "top_provider": {
         "context_length": 128000,
@@ -5969,11 +5999,7 @@
       },
       "pricing": {
         "prompt": "0.0000004",
-        "completion": "0.000002",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000002"
       },
       "top_provider": {
         "context_length": 131072,
@@ -6272,10 +6298,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -6316,10 +6339,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -6368,10 +6388,7 @@
       "pricing": {
         "prompt": "0.00000025",
         "completion": "0.000002",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000025"
       },
       "top_provider": {
@@ -6416,10 +6433,7 @@
       "pricing": {
         "prompt": "0.00000005",
         "completion": "0.0000004",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000005"
       },
       "top_provider": {
@@ -6748,7 +6762,7 @@
       },
       "top_provider": {
         "context_length": 200000,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 32000,
         "is_moderated": true
       },
       "per_request_limits": null,
@@ -6792,11 +6806,7 @@
       },
       "pricing": {
         "prompt": "0.0000003",
-        "completion": "0.0000009",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000009"
       },
       "top_provider": {
         "context_length": 256000,
@@ -7134,7 +7144,11 @@
         "top_k",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "z-ai/glm-4-32b",
@@ -7639,55 +7653,6 @@
       "default_parameters": {}
     },
     {
-      "id": "thudm/glm-4.1v-9b-thinking",
-      "canonical_slug": "thudm/glm-4.1v-9b-thinking",
-      "hugging_face_id": "THUDM/GLM-4.1V-9B-Thinking",
-      "name": "THUDM: GLM 4.1V 9B Thinking",
-      "created": 1752244385,
-      "description": "GLM-4.1V-9B-Thinking is a 9B parameter vision-language model developed by THUDM, based on the GLM-4-9B foundation. It introduces a reasoning-centric \"thinking paradigm\" enhanced with reinforcement learning to improve multimodal reasoning, long-context understanding (up to 64K tokens), and complex problem solving. It achieves state-of-the-art performance among models in its class, outperforming even larger models like Qwen-2.5-VL-72B on a majority of benchmark tasks. ",
-      "context_length": 65536,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "image",
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000000035",
-        "completion": "0.000000138",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
-      },
-      "top_provider": {
-        "context_length": 65536,
-        "max_completion_tokens": 8000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {}
-    },
-    {
       "id": "mistralai/devstral-medium",
       "canonical_slug": "mistralai/devstral-medium-2507",
       "hugging_face_id": "",
@@ -7708,11 +7673,7 @@
       },
       "pricing": {
         "prompt": "0.0000004",
-        "completion": "0.000002",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000002"
       },
       "top_provider": {
         "context_length": 131072,
@@ -8605,10 +8566,7 @@
       "pricing": {
         "prompt": "0.00002",
         "completion": "0.00008",
-        "request": "0",
-        "image": "0.0153",
-        "web_search": "0.01",
-        "internal_reasoning": "0"
+        "web_search": "0.01"
       },
       "top_provider": {
         "context_length": 200000,
@@ -8626,7 +8584,11 @@
         "tool_choice",
         "tools"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "x-ai/grok-3-mini",
@@ -8881,7 +8843,11 @@
         "repetition_penalty",
         "temperature"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "deepseek/deepseek-r1-0528",
@@ -8890,7 +8856,7 @@
       "name": "DeepSeek: R1 0528",
       "created": 1748455170,
       "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model.",
-      "context_length": 163840,
+      "context_length": 131072,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -8903,16 +8869,18 @@
         "instruct_type": "deepseek-r1"
       },
       "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.00000175",
+        "prompt": "0.00000045",
+        "completion": "0.00000215",
         "request": "0",
         "image": "0",
         "web_search": "0",
-        "internal_reasoning": "0"
+        "internal_reasoning": "0",
+        "input_cache_read": "0",
+        "input_cache_write": "0"
       },
       "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 65536,
+        "context_length": 131072,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -8937,7 +8905,11 @@
         "top_logprobs",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "anthropic/claude-opus-4",
@@ -9212,10 +9184,6 @@
       "pricing": {
         "prompt": "0.0000015",
         "completion": "0.000006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000375"
       },
       "top_provider": {
@@ -9310,11 +9278,7 @@
       },
       "pricing": {
         "prompt": "0.0000004",
-        "completion": "0.000002",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000002"
       },
       "top_provider": {
         "context_length": 131072,
@@ -9889,7 +9853,11 @@
         "top_k",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "qwen/qwen3-8b",
@@ -9944,7 +9912,11 @@
         "top_logprobs",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "qwen/qwen3-14b",
@@ -10232,10 +10204,7 @@
       "pricing": {
         "prompt": "0.0000011",
         "completion": "0.0000044",
-        "request": "0",
-        "image": "0.0008415",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000275"
       },
       "top_provider": {
@@ -10284,10 +10253,7 @@
       "pricing": {
         "prompt": "0.000002",
         "completion": "0.000008",
-        "request": "0",
-        "image": "0.00153",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.0000005"
       },
       "top_provider": {
@@ -10332,10 +10298,7 @@
       "pricing": {
         "prompt": "0.0000011",
         "completion": "0.0000044",
-        "request": "0",
-        "image": "0.0008415",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000275"
       },
       "top_provider": {
@@ -10426,10 +10389,7 @@
       "pricing": {
         "prompt": "0.000002",
         "completion": "0.000008",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.0000005"
       },
       "top_provider": {
@@ -10474,10 +10434,7 @@
       "pricing": {
         "prompt": "0.0000004",
         "completion": "0.0000016",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.0000001"
       },
       "top_provider": {
@@ -10522,10 +10479,7 @@
       "pricing": {
         "prompt": "0.0000001",
         "completion": "0.0000004",
-        "request": "0",
-        "image": "0",
         "web_search": "0.01",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000025"
       },
       "top_provider": {
@@ -11029,11 +10983,7 @@
       },
       "pricing": {
         "prompt": "0.00015",
-        "completion": "0.0006",
-        "request": "0",
-        "image": "0.21675",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0006"
       },
       "top_provider": {
         "context_length": 200000,
@@ -11229,7 +11179,7 @@
         "max_tokens",
         "response_format",
         "seed",
-        "structured_outputs",
+        "stop",
         "temperature",
         "top_p"
       ],
@@ -11321,6 +11271,7 @@
       "supported_parameters": [
         "max_tokens",
         "seed",
+        "stop",
         "temperature",
         "top_p"
       ],
@@ -11446,10 +11397,7 @@
       "pricing": {
         "prompt": "0.00000015",
         "completion": "0.0000006",
-        "request": "0.0275",
-        "image": "0.000217",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "web_search": "0.0275"
       },
       "top_provider": {
         "context_length": 128000,
@@ -11487,10 +11435,7 @@
       "pricing": {
         "prompt": "0.0000025",
         "completion": "0.00001",
-        "request": "0.035",
-        "image": "0.003613",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "web_search": "0.035"
       },
       "top_provider": {
         "context_length": 128000,
@@ -11548,7 +11493,6 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -12088,11 +12032,7 @@
       },
       "pricing": {
         "prompt": "0.0000002",
-        "completion": "0.0000006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000006"
       },
       "top_provider": {
         "context_length": 32768,
@@ -12188,10 +12128,6 @@
       "pricing": {
         "prompt": "0.0000011",
         "completion": "0.0000044",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.00000055"
       },
       "top_provider": {
@@ -12701,10 +12637,6 @@
       "pricing": {
         "prompt": "0.0000011",
         "completion": "0.0000044",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.00000055"
       },
       "top_provider": {
@@ -13293,10 +13225,6 @@
       "pricing": {
         "prompt": "0.000015",
         "completion": "0.00006",
-        "request": "0",
-        "image": "0.021675",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.0000075"
       },
       "top_provider": {
@@ -13665,10 +13593,6 @@
       "pricing": {
         "prompt": "0.0000025",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0.003613",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.00000125"
       },
       "top_provider": {
@@ -13717,11 +13641,7 @@
       },
       "pricing": {
         "prompt": "0.000002",
-        "completion": "0.000006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000006"
       },
       "top_provider": {
         "context_length": 131072,
@@ -13767,11 +13687,7 @@
       },
       "pricing": {
         "prompt": "0.000002",
-        "completion": "0.000006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000006"
       },
       "top_provider": {
         "context_length": 131072,
@@ -13818,11 +13734,7 @@
       },
       "pricing": {
         "prompt": "0.000002",
-        "completion": "0.000006",
-        "request": "0",
-        "image": "0.002888",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000006"
       },
       "top_provider": {
         "context_length": 131072,
@@ -13988,54 +13900,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_p"
-      ],
-      "default_parameters": {}
-    },
-    {
-      "id": "anthropic/claude-3.5-haiku-20241022",
-      "canonical_slug": "anthropic/claude-3-5-haiku-20241022",
-      "hugging_face_id": null,
-      "name": "Anthropic: Claude 3.5 Haiku (2024-10-22)",
-      "created": 1730678400,
-      "description": "Claude 3.5 Haiku features enhancements across all skill sets including coding, tool use, and reasoning. As the fastest model in the Anthropic lineup, it offers rapid response times suitable for applications that require high interactivity and low latency, such as user-facing chatbots and on-the-fly code completions. It also excels in specialized tasks like data extraction and real-time content moderation, making it a versatile tool for a broad range of industries.\n\nIt does not support image inputs.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/3-5-models-and-computer-use)",
-      "context_length": 200000,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000008",
-        "completion": "0.000004",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0",
-        "input_cache_read": "0.00000008",
-        "input_cache_write": "0.000001"
-      },
-      "top_provider": {
-        "context_length": 200000,
-        "max_completion_tokens": 8192,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {}
@@ -14210,11 +14074,7 @@
       },
       "pricing": {
         "prompt": "0.0000001",
-        "completion": "0.0000001",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000001"
       },
       "top_provider": {
         "context_length": 131072,
@@ -14260,11 +14120,7 @@
       },
       "pricing": {
         "prompt": "0.00000004",
-        "completion": "0.00000004",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00000004"
       },
       "top_provider": {
         "context_length": 131072,
@@ -14332,6 +14188,8 @@
         "seed",
         "stop",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
@@ -15320,11 +15178,7 @@
       },
       "pricing": {
         "prompt": "0.000005",
-        "completion": "0.000015",
-        "request": "0",
-        "image": "0.007225",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000015"
       },
       "top_provider": {
         "context_length": 128000,
@@ -15776,10 +15630,6 @@
       "pricing": {
         "prompt": "0.00000015",
         "completion": "0.0000006",
-        "request": "0",
-        "image": "0.007225",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000075"
       },
       "top_provider": {
@@ -15831,10 +15681,6 @@
       "pricing": {
         "prompt": "0.00000015",
         "completion": "0.0000006",
-        "request": "0",
-        "image": "0.000217",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.000000075"
       },
       "top_provider": {
@@ -16271,11 +16117,7 @@
       },
       "pricing": {
         "prompt": "0.000005",
-        "completion": "0.000015",
-        "request": "0",
-        "image": "0.007225",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000015"
       },
       "top_provider": {
         "context_length": 128000,
@@ -16326,10 +16168,6 @@
       "pricing": {
         "prompt": "0.0000025",
         "completion": "0.00001",
-        "request": "0",
-        "image": "0.003613",
-        "web_search": "0",
-        "internal_reasoning": "0",
         "input_cache_read": "0.00000125"
       },
       "top_provider": {
@@ -16380,11 +16218,7 @@
       },
       "pricing": {
         "prompt": "0.000006",
-        "completion": "0.000018",
-        "request": "0",
-        "image": "0.007225",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000018"
       },
       "top_provider": {
         "context_length": 128000,
@@ -16535,11 +16369,7 @@
       },
       "pricing": {
         "prompt": "0.000002",
-        "completion": "0.000006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000006"
       },
       "top_provider": {
         "context_length": 65536,
@@ -16634,11 +16464,7 @@
       },
       "pricing": {
         "prompt": "0.00001",
-        "completion": "0.00003",
-        "request": "0",
-        "image": "0.01445",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00003"
       },
       "top_provider": {
         "context_length": 128000,
@@ -16732,11 +16558,7 @@
       },
       "pricing": {
         "prompt": "0.000002",
-        "completion": "0.000006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000006"
       },
       "top_provider": {
         "context_length": 128000,
@@ -16833,11 +16655,7 @@
       },
       "pricing": {
         "prompt": "0.00001",
-        "completion": "0.00003",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00003"
       },
       "top_provider": {
         "context_length": 128000,
@@ -16884,11 +16702,7 @@
       },
       "pricing": {
         "prompt": "0.00000025",
-        "completion": "0.00000025",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00000025"
       },
       "top_provider": {
         "context_length": 32768,
@@ -17177,11 +16991,7 @@
       },
       "pricing": {
         "prompt": "0.00001",
-        "completion": "0.00003",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00003"
       },
       "top_provider": {
         "context_length": 128000,
@@ -17228,11 +17038,7 @@
       },
       "pricing": {
         "prompt": "0.0000015",
-        "completion": "0.000002",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000002"
       },
       "top_provider": {
         "context_length": 4095,
@@ -17324,11 +17130,7 @@
       },
       "pricing": {
         "prompt": "0.000003",
-        "completion": "0.000004",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.000004"
       },
       "top_provider": {
         "context_length": 16385,
@@ -17533,11 +17335,7 @@
       },
       "pricing": {
         "prompt": "0.00003",
-        "completion": "0.00006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00006"
       },
       "top_provider": {
         "context_length": 8191,
@@ -17584,11 +17382,7 @@
       },
       "pricing": {
         "prompt": "0.00003",
-        "completion": "0.00006",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.00006"
       },
       "top_provider": {
         "context_length": 8191,
@@ -17635,11 +17429,7 @@
       },
       "pricing": {
         "prompt": "0.0000005",
-        "completion": "0.0000015",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0.0000015"
       },
       "top_provider": {
         "context_length": 16385,
